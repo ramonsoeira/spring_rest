@@ -1,11 +1,8 @@
 package com.firstboot.apirest.repository;
 
+import com.firstboot.apirest.models.Products;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.firstboot.apirest.models.Products;
-
 public interface ProductRepository extends JpaRepository<Products, Long> {
-	
-	Products findById(long id);
-
+  Products findById(long id);
 }
